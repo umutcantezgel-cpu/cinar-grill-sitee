@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "name": "Cinar Grill Premium Website",
+  "version": "2.0.0",
+  "description": "Premium Multi-Page Restaurant Website mit höchsten Qualitätsstandards",
+  "author": "Premium Web Solutions",
+  "license": "Proprietary",
+  "target": {
+    "platforms": ["web", "mobile", "tablet"],
+    "browsers": ["chrome >= 90", "firefox >= 88", "safari >= 14", "edge >= 90"],
+    "languages": ["de", "en", "fr", "it"]
+  },
+  "quality": {
+    "lighthouse": {
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "pwa": 90
+    },
+    "wcag": "AA",
+    "securityHeaders": "A+",
+    "coreWebVitals": {
+      "LCP": 2.5,
+      "CLS": 0.1,
+      "INP": 200
+    }
+  },
+  "architecture": {
+    "type": "multi-page",
+    "pages": [
+      {
+        "id": "home",
+        "path": "/",
+        "file": "index.html",
+        "title": "Cinar Grill - Premium Grillspezialitäten",
+        "priority": "high",
+        "preload": true
+      },
+      {
+        "id": "about",
+        "path": "/about",
+        "file": "about.html",
+        "title": "Über Uns - Cinar Grill",
+        "priority": "medium"
+      },
+      {
+        "id": "menu",
+        "path": "/menu",
+        "file": "menu.html",
+        "title": "Speisekarte - Cinar Grill",
+        "priority": "high"
+      },
+      {
+        "id": "gallery",
+        "path": "/gallery",
+        "file": "gallery.html",
+        "title": "Galerie - Cinar Grill",
+        "priority": "medium"
+      },
+      {
+        "id": "reservation",
+        "path": "/reservation",
+        "file": "reservation.html",
+        "title": "Reservierung - Cinar Grill",
+        "priority": "high"
+      },
+      {
+        "id": "contact",
+        "path": "/contact",
+        "file": "contact.html",
+        "title": "Kontakt - Cinar Grill",
+        "priority": "medium"
+      },
+      {
+        "id": "privacy",
+        "path": "/privacy",
+        "file": "privacy.html",
+        "title": "Datenschutz - Cinar Grill",
+        "priority": "low"
+      },
+      {
+        "id": "imprint",
+        "path": "/imprint",
+        "file": "imprint.html",
+        "title": "Impressum - Cinar Grill",
+        "priority": "low"
+      }
+    ],
+    "systemPages": [
+      {
+        "id": "404",
+        "file": "404.html",
+        "title": "Seite nicht gefunden",
+        "noindex": true
+      },
+      {
+        "id": "503",
+        "file": "503.html",
+        "title": "Service nicht verfügbar",
+        "noindex": true
+      },
+      {
+        "id": "offline",
+        "file": "offline.html",
+        "title": "Offline-Modus",
+        "noindex": true
+      }
+    ]
+  },
+  "security": {
+    "csp": {
+      "defaultSrc": ["'self'"],
+      "scriptSrc": ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com"],
+      "styleSrc": ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com"],
+      "imgSrc": ["'self'", "data:", "https:"],
+      "fontSrc": ["'self'", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com"],
+      "connectSrc": ["'self'"],
+      "frameSrc": ["'none'"],
+      "objectSrc": ["'none'"],
+      "baseUri": ["'self'"],
+      "formAction": ["'self'"]
+    },
+    "sri": true,
+    "https": true,
+    "hsts": true,
+    "xFrameOptions": "DENY",
+    "xContentTypeOptions": "nosniff",
+    "referrerPolicy": "strict-origin-when-cross-origin"
+  },
+  "privacy": {
+    "consentFirst": true,
+    "gdprCompliant": true,
+    "cookieConsent": true,
+    "tracking": {
+      "analytics": false,
+      "marketing": false,
+      "functional": true
+    }
+  },
+  "performance": {
+    "criticalCSS": true,
+    "lazyLoading": true,
+    "imageOptimization": true,
+    "minification": true,
+    "compression": "brotli",
+    "caching": {
+      "static": "1y",
+      "dynamic": "1h"
+    },
+    "budgets": {
+      "javascript": "70kb",
+      "css": "35kb",
+      "images": "200kb",
+      "fonts": "100kb"
+    }
+  },
+  "seo": {
+    "sitemap": true,
+    "robots": true,
+    "structuredData": ["LocalBusiness", "Restaurant", "BreadcrumbList"],
+    "openGraph": true,
+    "twitterCard": true,
+    "canonicalUrls": true,
+    "hreflang": true
+  },
+  "i18n": {
+    "defaultLocale": "de-DE",
+    "supportedLocales": ["de-DE", "en-US", "fr-FR", "it-IT"],
+    "fallbackLocale": "de-DE",
+    "localeFiles": "locales/{locale}.json"
+  },
+  "designSystem": {
+    "tokens": "css/tokens.css",
+    "components": "components/",
+    "colorMode": ["light", "dark"],
+    "breakpoints": {
+      "mobile": 576,
+      "tablet": 768,
+      "desktop": 992,
+      "wide": 1200,
+      "ultrawide": 1400
+    }
+  },
+  "testing": {
+    "lighthouse": true,
+    "pa11y": true,
+    "axe": true,
+    "securityHeaders": true,
+    "w3cValidation": true
+  },
+  "build": {
+    "source": "src/",
+    "output": "dist/",
+    "assets": "assets/",
+    "clean": true
+  }
+}

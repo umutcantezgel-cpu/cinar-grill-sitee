@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <!-- SEO -->
+    <title>Seite nicht gefunden - 404 | Cinar Grill</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"></noscript>
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--color-dark-900) 0%, var(--color-dark-800) 100%);
+            color: var(--color-text-inverse);
+            padding: var(--spacing-8);
+        }
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: clamp(80px, 15vw, 180px);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-300));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-6);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .error-title {
+            font-family: var(--font-family-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: var(--spacing-4);
+            color: var(--color-neutral-100);
+        }
+        .error-description {
+            font-size: var(--font-size-lg);
+            color: var(--color-neutral-400);
+            margin-bottom: var(--spacing-8);
+            line-height: var(--line-height-relaxed);
+        }
+        .error-buttons {
+            display: flex;
+            gap: var(--spacing-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skeleton-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--spacing-6);
+            background: var(--color-primary-500);
+            border-radius: var(--border-radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <main class="error-page" role="main">
+        <div class="error-content">
+            <div class="skeleton-icon" aria-hidden="true">
+                <span>🔍</span>
+            </div>
+            <h1 class="error-code" aria-label="Fehlercode 404">404</h1>
+            <h2 class="error-title">Seite nicht gefunden</h2>
+            <p class="error-description">
+                Die von Ihnen gesuchte Seite existiert leider nicht. Möglicherweise wurde sie verschoben oder gelöscht.
+            </p>
+            <div class="error-buttons">
+                <a href="/" class="btn btn-primary btn-large">
+                    <i class="fas fa-home" aria-hidden="true"></i> Zur Startseite
+                </a>
+                <a href="/menu" class="btn btn-secondary btn-large">
+                    <i class="fas fa-utensils" aria-hidden="true"></i> Zur Speisekarte
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="refresh" content="30">
+
+    <!-- SEO -->
+    <title>Service vorübergehend nicht verfügbar - 503 | Cinar Grill</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"></noscript>
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--color-dark-900) 0%, var(--color-dark-800) 100%);
+            color: var(--color-text-inverse);
+            padding: var(--spacing-8);
+        }
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: clamp(80px, 15vw, 180px);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--color-warning), var(--color-primary-300));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-6);
+        }
+        .error-title {
+            font-family: var(--font-family-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: var(--spacing-4);
+            color: var(--color-neutral-100);
+        }
+        .error-description {
+            font-size: var(--font-size-lg);
+            color: var(--color-neutral-400);
+            margin-bottom: var(--spacing-6);
+            line-height: var(--line-height-relaxed);
+        }
+        .skeleton-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--spacing-6);
+            background: var(--color-warning);
+            border-radius: var(--border-radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            animation: rotate 2s linear infinite;
+        }
+        .retry-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-6);
+            border-radius: var(--border-radius-lg);
+            margin-top: var(--spacing-8);
+        }
+        .contact-box {
+            margin-top: var(--spacing-6);
+            padding-top: var(--spacing-6);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <main class="error-page" role="main">
+        <div class="error-content">
+            <div class="skeleton-icon" aria-hidden="true">
+                <span>⚙️</span>
+            </div>
+            <h1 class="error-code" aria-label="Fehlercode 503">503</h1>
+            <h2 class="error-title">Service vorübergehend nicht verfügbar</h2>
+            <p class="error-description">
+                Wir führen gerade Wartungsarbeiten durch oder haben momentan sehr viele Besucher. Bitte versuchen Sie es in wenigen Minuten erneut.
+            </p>
+            <div class="retry-info">
+                <p><strong>Diese Seite wird automatisch in 30 Sekunden neu geladen.</strong></p>
+                <p>Oder klicken Sie unten, um es manuell zu versuchen.</p>
+                <button onclick="window.location.reload()" class="btn btn-primary" style="margin-top: var(--spacing-4);">
+                    <i class="fas fa-sync-alt" aria-hidden="true"></i> Jetzt neu laden
+                </button>
+            </div>
+            <div class="contact-box">
+                <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-3);">Dringend?</h3>
+                <p>Rufen Sie uns an für telefonische Reservierungen:</p>
+                <p style="font-size: var(--font-size-2xl); color: var(--color-primary-500); margin-top: var(--spacing-3);">
+                    <a href="tel:+491234567890" style="color: var(--color-primary-500);">+49 (0) 123 456789</a>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

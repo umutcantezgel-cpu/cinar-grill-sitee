@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.cinar-grill.de/</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.cinar-grill.de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cinar-grill.de/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.cinar-grill.de/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cinar-grill.de/it/" />
+  </url>
+
+  <!-- Über Uns -->
+  <url>
+    <loc>https://www.cinar-grill.de/about.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.cinar-grill.de/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cinar-grill.de/en/about.html" />
+  </url>
+
+  <!-- Speisekarte -->
+  <url>
+    <loc>https://www.cinar-grill.de/menu.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.cinar-grill.de/menu.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cinar-grill.de/en/menu.html" />
+  </url>
+
+  <!-- Galerie -->
+  <url>
+    <loc>https://www.cinar-grill.de/gallery.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Reservierung -->
+  <url>
+    <loc>https://www.cinar-grill.de/reservation.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Kontakt -->
+  <url>
+    <loc>https://www.cinar-grill.de/contact.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Datenschutz -->
+  <url>
+    <loc>https://www.cinar-grill.de/privacy.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Impressum -->
+  <url>
+    <loc>https://www.cinar-grill.de/imprint.html</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
