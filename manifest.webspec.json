@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "name": "cinar-grill-website",
+  "title": "Cinar Grill - Premium Restaurant Website",
+  "description": "Multi-page premium restaurant website with WCAG 2.2 AA compliance and enterprise-grade performance",
+
+  "meta": {
+    "production_value": "20000+ EUR",
+    "quality_benchmark": "Nobu, Mastro's, Zuma, Hakkasan",
+    "last_audit": null,
+    "status": "in_development"
+  },
+
+  "architecture": {
+    "type": "static-first",
+    "paradigm": "progressive-enhancement",
+    "rendering": "server-side-ready",
+    "deployment": "cdn-edge"
+  },
+
+  "quality_gates": {
+    "lighthouse": {
+      "performance": 95,
+      "accessibility": 100,
+      "best_practices": 100,
+      "seo": 100
+    },
+    "core_web_vitals": {
+      "lcp": 2.5,
+      "cls": 0.1,
+      "inp": 200
+    },
+    "security": {
+      "headers_grade": "A",
+      "csp_enabled": true,
+      "sri_complete": true
+    },
+    "accessibility": {
+      "wcag_level": "AA",
+      "wcag_version": "2.2",
+      "automated_tests": ["axe", "pa11y"],
+      "manual_review": true
+    },
+    "performance": {
+      "initial_js": 70,
+      "initial_css": 35,
+      "max_image_size": 200,
+      "font_strategy": "subset"
+    }
+  },
+
+  "pages": {
+    "index": {
+      "path": "/",
+      "title_template": "Cinar Grill - {locale.tagline}",
+      "priority": 1.0,
+      "changefreq": "weekly",
+      "components": ["hero", "features", "cta", "testimonials"]
+    },
+    "about": {
+      "path": "/about.html",
+      "title_template": "{locale.about} - Cinar Grill",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "components": ["story", "team", "values"]
+    },
+    "menu": {
+      "path": "/menu.html",
+      "title_template": "{locale.menu} - Cinar Grill",
+      "priority": 0.9,
+      "changefreq": "weekly",
+      "components": ["menu-categories", "allergens", "nutrition"]
+    },
+    "gallery": {
+      "path": "/gallery.html",
+      "title_template": "{locale.gallery} - Cinar Grill",
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "components": ["image-grid", "lightbox"]
+    },
+    "reservations": {
+      "path": "/reservations.html",
+      "title_template": "{locale.reservations} - Cinar Grill",
+      "priority": 0.9,
+      "changefreq": "daily",
+      "components": ["booking-form", "availability", "confirmation"]
+    },
+    "contact": {
+      "path": "/contact.html",
+      "title_template": "{locale.contact} - Cinar Grill",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "components": ["contact-form", "map", "hours"]
+    },
+    "privacy": {
+      "path": "/privacy.html",
+      "title_template": "{locale.privacy} - Cinar Grill",
+      "priority": 0.3,
+      "changefreq": "yearly",
+      "components": ["legal-text"]
+    },
+    "imprint": {
+      "path": "/imprint.html",
+      "title_template": "{locale.imprint} - Cinar Grill",
+      "priority": 0.3,
+      "changefreq": "yearly",
+      "components": ["legal-text"]
+    },
+    "404": {
+      "path": "/404.html",
+      "noindex": true,
+      "components": ["error-state"]
+    },
+    "503": {
+      "path": "/503.html",
+      "noindex": true,
+      "components": ["maintenance-state"]
+    },
+    "offline": {
+      "path": "/offline.html",
+      "noindex": true,
+      "components": ["offline-state"]
+    }
+  },
+
+  "locales": {
+    "default": "de",
+    "supported": ["de", "en", "fr", "it"],
+    "fallback": "de",
+    "auto_detect": true,
+    "strategy": "url-parameter"
+  },
+
+  "design_tokens": {
+    "source": "css/tokens.css",
+    "schema": "design-tokens-v1",
+    "categories": [
+      "colors",
+      "typography",
+      "spacing",
+      "shadows",
+      "borders",
+      "transitions",
+      "breakpoints"
+    ]
+  },
+
+  "components": {
+    "contract_location": "css/components/",
+    "naming_convention": "BEM",
+    "atomic_design": true,
+    "categories": {
+      "atoms": ["button", "input", "label", "icon"],
+      "molecules": ["form-field", "card", "nav-item"],
+      "organisms": ["header", "footer", "menu-section", "booking-form"],
+      "templates": ["page-layout", "section-layout"]
+    }
+  },
+
+  "security": {
+    "csp": {
+      "default-src": ["'self'"],
+      "script-src": ["'self'", "'sha256-{hash}'"],
+      "style-src": ["'self'", "'sha256-{hash}'"],
+      "img-src": ["'self'", "data:", "https:"],
+      "font-src": ["'self'"],
+      "connect-src": ["'self'"],
+      "frame-ancestors": ["'none'"],
+      "base-uri": ["'self'"],
+      "form-action": ["'self'"]
+    },
+    "headers": {
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+    },
+    "sri": {
+      "enabled": true,
+      "algorithm": "sha384"
+    },
+    "consent": {
+      "required": true,
+      "framework": "custom",
+      "categories": ["essential", "analytics", "marketing"],
+      "default_essential_only": true
+    }
+  },
+
+  "seo": {
+    "structured_data": {
+      "schemas": ["LocalBusiness", "Restaurant", "BreadcrumbList", "FAQPage"],
+      "validation": true
+    },
+    "meta": {
+      "og_tags": true,
+      "twitter_cards": true,
+      "unique_descriptions": true,
+      "canonical": true
+    },
+    "sitemap": {
+      "enabled": true,
+      "path": "/sitemap.xml",
+      "auto_generate": false
+    },
+    "robots": {
+      "enabled": true,
+      "path": "/robots.txt"
+    }
+  },
+
+  "performance": {
+    "critical_css": {
+      "enabled": true,
+      "inline": true,
+      "max_size_kb": 14
+    },
+    "lazy_loading": {
+      "images": true,
+      "iframes": true,
+      "native": true
+    },
+    "preload": {
+      "fonts": true,
+      "critical_images": true,
+      "strategy": "dns-prefetch"
+    },
+    "compression": {
+      "gzip": true,
+      "brotli": true
+    },
+    "caching": {
+      "static_assets": "1y",
+      "html": "1h",
+      "service_worker": true
+    }
+  },
+
+  "accessibility": {
+    "focus_visible": true,
+    "skip_links": true,
+    "aria_landmarks": true,
+    "keyboard_navigation": true,
+    "screen_reader_optimized": true,
+    "color_contrast": {
+      "min_ratio": 4.5,
+      "large_text_ratio": 3.0
+    },
+    "motion": {
+      "respect_reduced_motion": true,
+      "disable_parallax_option": true
+    }
+  },
+
+  "testing": {
+    "lighthouse_ci": {
+      "enabled": true,
+      "budget": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    "accessibility_tests": {
+      "axe": true,
+      "pa11y": true,
+      "manual": true
+    },
+    "security_tests": {
+      "headers": true,
+      "csp": true,
+      "sri": true
+    },
+    "visual_regression": {
+      "enabled": false,
+      "tool": "percy"
+    }
+  },
+
+  "build": {
+    "pipeline": "github-actions",
+    "node_version": "20.x",
+    "package_manager": "npm",
+    "scripts": {
+      "build": "npm run build",
+      "test": "npm run test:all",
+      "lighthouse": "npm run test:lighthouse",
+      "a11y": "npm run test:a11y",
+      "security": "npm run test:security"
+    }
+  },
+
+  "contracts": {
+    "definition_of_done": {
+      "lighthouse_all_green": true,
+      "wcag_aa_compliant": true,
+      "security_headers_a": true,
+      "core_web_vitals_green": true,
+      "all_tests_passing": true,
+      "manual_review_completed": true,
+      "documentation_complete": true,
+      "legal_compliance": true
+    }
+  }
+}

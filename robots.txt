@@ -1,0 +1,26 @@
+# robots.txt für Cinar Grill
+# https://www.cinar-grill.de/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /503.html
+Disallow: /offline.html
+Disallow: /tests/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://www.cinar-grill.de/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1
+
+# Special rules for specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /

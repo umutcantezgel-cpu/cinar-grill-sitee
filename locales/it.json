@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "lang": "it",
+    "locale": "it-IT",
+    "name": "Italiano",
+    "direction": "ltr"
+  },
+  "site": {
+    "name": "Cinar Grill",
+    "tagline": "Specialità Autentiche alla Griglia & Cucina Mediterranea"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "menu": "Menu",
+    "gallery": "Galleria",
+    "reservations": "Prenotazioni",
+    "contact": "Contatto",
+    "privacy": "Privacy",
+    "imprint": "Colophon"
+  },
+  "home": {
+    "hero_title": "Benvenuti al Cinar Grill",
+    "hero_subtitle": "Scoprite specialità autentiche alla griglia e delizie mediterranee in un'atmosfera di prima classe",
+    "cta_menu": "Vedi il Menu",
+    "cta_reserve": "Prenota Tavolo"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "subtitle": "La Nostra Storia & Filosofia",
+    "story_title": "La Nostra Storia",
+    "story_text": "Da oltre due decenni al Cinar Grill, combiniamo ricette tradizionali con un tocco moderno. La nostra passione per i piatti grigliati autentici e la cucina mediterranea si riflette in ogni piatto che serviamo.",
+    "values_title": "I Nostri Valori",
+    "quality": "Qualità",
+    "quality_text": "Solo ingredienti freschissimi e migliore qualità",
+    "tradition": "Tradizione",
+    "tradition_text": "Ricette autentiche tramandate di generazione in generazione",
+    "service": "Servizio",
+    "service_text": "Servizio eccellente per un'esperienza indimenticabile"
+  },
+  "menu": {
+    "title": "Il Nostro Menu",
+    "subtitle": "Specialità Selezionate dalla Griglia a Carbone",
+    "appetizers": "Antipasti",
+    "mains": "Piatti Principali",
+    "sides": "Contorni",
+    "desserts": "Dessert",
+    "beverages": "Bevande",
+    "allergen_info": "Informazioni sugli Allergeni"
+  },
+  "reservations": {
+    "title": "Prenota un Tavolo",
+    "subtitle": "Assicurati il tuo tavolo da noi",
+    "form_name": "Il Tuo Nome",
+    "form_email": "Indirizzo Email",
+    "form_phone": "Numero di Telefono",
+    "form_date": "Data",
+    "form_time": "Ora",
+    "form_guests": "Numero di Ospiti",
+    "form_message": "Richieste Speciali",
+    "submit": "Richiedi Prenotazione",
+    "success": "Grazie! Confermeremo la tua prenotazione.",
+    "error": "Si è verificato un errore. Riprova."
+  },
+  "contact": {
+    "title": "Contatto",
+    "subtitle": "Non vediamo l'ora di sentirti",
+    "address_title": "Indirizzo",
+    "address": "Via Esempio 123, 12345 Città Esempio",
+    "phone_title": "Telefono",
+    "phone": "+49 (0) 123 456789",
+    "email_title": "Email",
+    "email": "info@cinar-grill.de",
+    "hours_title": "Orari di Apertura",
+    "hours_mon_fri": "Lunedì - Venerdì: 11:00 - 22:00",
+    "hours_sat_sun": "Sabato - Domenica: 12:00 - 23:00",
+    "form_subject": "Oggetto",
+    "form_message": "Il Tuo Messaggio",
+    "send": "Invia Messaggio"
+  },
+  "footer": {
+    "tagline": "Specialità autentiche alla griglia da molti anni",
+    "quick_links": "Link Rapidi",
+    "follow_us": "Seguici",
+    "newsletter": "Newsletter",
+    "newsletter_text": "Rimani informato su novità e offerte",
+    "subscribe": "Iscriviti",
+    "copyright": "© {year} Cinar Grill. Tutti i diritti riservati."
+  },
+  "errors": {
+    "404_title": "Pagina Non Trovata",
+    "404_text": "La pagina che stai cercando non esiste.",
+    "503_title": "Manutenzione",
+    "503_text": "Stiamo attualmente eseguendo la manutenzione. Riprova più tardi.",
+    "offline_title": "Nessuna Connessione Internet",
+    "offline_text": "Sei offline. Controlla la tua connessione Internet.",
+    "back_home": "Torna alla Home"
+  },
+  "accessibility": {
+    "skip_to_content": "Vai al contenuto principale",
+    "skip_to_nav": "Vai alla navigazione",
+    "open_menu": "Apri menu",
+    "close_menu": "Chiudi menu",
+    "loading": "Caricamento...",
+    "close": "Chiudi",
+    "previous": "Precedente",
+    "next": "Successivo"
+  },
+  "consent": {
+    "title": "Impostazioni Cookie",
+    "text": "Utilizziamo i cookie per migliorare la tua esperienza. Puoi modificare le impostazioni in qualsiasi momento.",
+    "essential": "Essenziali",
+    "essential_desc": "Necessari per le funzioni di base del sito",
+    "analytics": "Analitici",
+    "analytics_desc": "Ci aiuta a migliorare il sito",
+    "marketing": "Marketing",
+    "marketing_desc": "Per pubblicità personalizzata",
+    "accept_all": "Accetta Tutto",
+    "accept_selected": "Accetta Selezionati",
+    "reject_all": "Rifiuta Tutto",
+    "manage": "Gestisci Impostazioni"
+  }
+}

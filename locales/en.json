@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "lang": "en",
+    "locale": "en-US",
+    "name": "English",
+    "direction": "ltr"
+  },
+  "site": {
+    "name": "Cinar Grill",
+    "tagline": "Authentic Grilled Specialties & Mediterranean Cuisine"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "reservations": "Reservations",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint"
+  },
+  "home": {
+    "hero_title": "Welcome to Cinar Grill",
+    "hero_subtitle": "Experience authentic grilled specialties and Mediterranean delicacies in a first-class atmosphere",
+    "cta_menu": "View Menu",
+    "cta_reserve": "Reserve Table"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our Story & Philosophy",
+    "story_title": "Our Story",
+    "story_text": "For over two decades at Cinar Grill, we have combined traditional recipes with modern flair. Our passion for authentic grilled dishes and Mediterranean cuisine is reflected in every dish we serve.",
+    "values_title": "Our Values",
+    "quality": "Quality",
+    "quality_text": "Only the freshest ingredients and best quality",
+    "tradition": "Tradition",
+    "tradition_text": "Authentic recipes passed down through generations",
+    "service": "Service",
+    "service_text": "Excellent service for an unforgettable experience"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Handpicked Specialties from the Charcoal Grill",
+    "appetizers": "Appetizers",
+    "mains": "Main Courses",
+    "sides": "Side Dishes",
+    "desserts": "Desserts",
+    "beverages": "Beverages",
+    "allergen_info": "Allergen Information"
+  },
+  "reservations": {
+    "title": "Reserve a Table",
+    "subtitle": "Secure your table with us",
+    "form_name": "Your Name",
+    "form_email": "Email Address",
+    "form_phone": "Phone Number",
+    "form_date": "Date",
+    "form_time": "Time",
+    "form_guests": "Number of Guests",
+    "form_message": "Special Requests",
+    "submit": "Request Reservation",
+    "success": "Thank you! We will confirm your reservation.",
+    "error": "An error occurred. Please try again."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We look forward to hearing from you",
+    "address_title": "Address",
+    "address": "Sample Street 123, 12345 Sample City",
+    "phone_title": "Phone",
+    "phone": "+49 (0) 123 456789",
+    "email_title": "Email",
+    "email": "info@cinar-grill.de",
+    "hours_title": "Opening Hours",
+    "hours_mon_fri": "Monday - Friday: 11:00 AM - 10:00 PM",
+    "hours_sat_sun": "Saturday - Sunday: 12:00 PM - 11:00 PM",
+    "form_subject": "Subject",
+    "form_message": "Your Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "tagline": "Authentic grilled specialties for many years",
+    "quick_links": "Quick Links",
+    "follow_us": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletter_text": "Stay informed about news and offers",
+    "subscribe": "Subscribe",
+    "copyright": "© {year} Cinar Grill. All rights reserved."
+  },
+  "errors": {
+    "404_title": "Page Not Found",
+    "404_text": "The page you are looking for does not exist.",
+    "503_title": "Maintenance",
+    "503_text": "We are currently performing maintenance. Please try again later.",
+    "offline_title": "No Internet Connection",
+    "offline_text": "You are offline. Please check your internet connection.",
+    "back_home": "Back to Home"
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to main content",
+    "skip_to_nav": "Skip to navigation",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "loading": "Loading...",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "consent": {
+    "title": "Cookie Settings",
+    "text": "We use cookies to improve your experience. You can change your settings at any time.",
+    "essential": "Essential",
+    "essential_desc": "Required for basic website functions",
+    "analytics": "Analytics",
+    "analytics_desc": "Helps us improve the website",
+    "marketing": "Marketing",
+    "marketing_desc": "For personalized advertising",
+    "accept_all": "Accept All",
+    "accept_selected": "Accept Selected",
+    "reject_all": "Reject All",
+    "manage": "Manage Settings"
+  }
+}

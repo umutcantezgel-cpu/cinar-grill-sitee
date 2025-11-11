@@ -1,270 +1,484 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cinar Grill - Authentische türkische und mediterrane Küche. Genießen Sie unsere köstlichen Grillspezialitäten.">
-    <meta name="keywords" content="Restaurant, Grill, Türkisch, Mediterran, Essen, Cinar">
-    <title>Cinar Grill - Authentische Grillspezialitäten</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- ========================================
+       META TAGS - SEO & Performance
+       ======================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Cinar Grill - Authentische Grillspezialitäten & Mediterrane Küche</title>
+  <meta name="title" content="Cinar Grill - Authentische Grillspezialitäten & Mediterrane Küche">
+  <meta name="description" content="Erleben Sie erstklassige Grillspezialitäten und mediterrane Köstlichkeiten bei Cinar Grill. Traditionelle Rezepte, moderne Atmosphäre, exzellenter Service.">
+  <meta name="keywords" content="Restaurant, Grill, Grillspezialitäten, Mediterran, Türkisch, Cinar Grill, Authentisch">
+  <meta name="author" content="Cinar Grill">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+  <!-- Canonical & Alternate Languages -->
+  <link rel="canonical" href="https://www.cinar-grill.de/">
+  <link rel="alternate" hreflang="de" href="https://www.cinar-grill.de/">
+  <link rel="alternate" hreflang="en" href="https://www.cinar-grill.de/?lang=en">
+  <link rel="alternate" hreflang="fr" href="https://www.cinar-grill.de/?lang=fr">
+  <link rel="alternate" hreflang="it" href="https://www.cinar-grill.de/?lang=it">
+  <link rel="alternate" hreflang="x-default" href="https://www.cinar-grill.de/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cinar-grill.de/">
+  <meta property="og:title" content="Cinar Grill - Authentische Grillspezialitäten">
+  <meta property="og:description" content="Erleben Sie erstklassige Grillspezialitäten und mediterrane Köstlichkeiten">
+  <meta property="og:image" content="https://www.cinar-grill.de/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Cinar Grill">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.cinar-grill.de/">
+  <meta name="twitter:title" content="Cinar Grill - Authentische Grillspezialitäten">
+  <meta name="twitter:description" content="Erleben Sie erstklassige Grillspezialitäten und mediterrane Köstlichkeiten">
+  <meta name="twitter:image" content="https://www.cinar-grill.de/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#C41E3A">
+
+  <!-- DNS Prefetch & Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  <!-- Critical CSS - Inlined for Performance -->
+  <style>
+    /* Minimal Critical CSS - Full critical.css will be loaded async */
+    @import url('/css/tokens.css');
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+    body{font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:1rem;line-height:1.5;color:#1A1A1A;background:#fff;overflow-x:hidden}
+    .skip-link{position:absolute;top:-100%;left:0;z-index:9999;padding:1rem;background:#C41E3A;color:#fff;text-decoration:none;font-weight:700}
+    .skip-link:focus{top:0;outline:3px solid #C41E3A;outline-offset:2px}
+    .header{position:fixed;top:0;left:0;right:0;z-index:300;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+  </style>
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="/css/critical.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" as="style">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/critical.css">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap">
+  </noscript>
+
+  <!-- Structured Data - LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.cinar-grill.de/#restaurant",
+    "name": "Cinar Grill",
+    "description": "Authentische Grillspezialitäten und mediterrane Küche in erstklassiger Atmosphäre",
+    "url": "https://www.cinar-grill.de",
+    "logo": "https://www.cinar-grill.de/assets/logo.png",
+    "image": "https://www.cinar-grill.de/assets/restaurant-hero.jpg",
+    "priceRange": "€€",
+    "servesCuisine": ["Turkish", "Mediterranean", "Grill"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Musterstraße 123",
+      "addressLocality": "Musterstadt",
+      "postalCode": "12345",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "0.0000000",
+      "longitude": "0.0000000"
+    },
+    "telephone": "+49-123-456789",
+    "email": "info@cinar-grill.de",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "11:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "23:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/cinargrill",
+      "https://www.instagram.com/cinargrill",
+      "https://www.tripadvisor.com/cinargrill"
+    ],
+    "acceptsReservations": "True",
+    "menu": "https://www.cinar-grill.de/menu.html"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.cinar-grill.de/"
+    }]
+  }
+  </script>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Cinar Grill</h1>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">Über Uns</a></li>
-                <li><a href="#menu" class="nav-link">Speisekarte</a></li>
-                <li><a href="#gallery" class="nav-link">Galerie</a></li>
-                <li><a href="#contact" class="nav-link">Kontakt</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <!-- ========================================
+       SKIP LINKS - WCAG 2.2 AA Required
+       ======================================== -->
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+  <a href="#main-navigation" class="skip-link">Zur Navigation springen</a>
+
+  <!-- ========================================
+       HEADER & NAVIGATION
+       ======================================== -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <!-- Logo -->
+      <a href="/" class="header__logo" aria-label="Cinar Grill - Zurück zur Startseite">
+        Cinar Grill
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button
+        class="nav-toggle"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+        aria-label="Hauptmenü öffnen"
+        type="button"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <!-- Main Navigation -->
+      <nav id="main-navigation" class="nav" role="navigation" aria-label="Hauptnavigation" aria-hidden="true">
+        <ul class="nav__list" role="menubar">
+          <li class="nav__item" role="none">
+            <a href="/" class="nav__link" role="menuitem" aria-current="page">
+              Startseite
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a href="/about.html" class="nav__link" role="menuitem">
+              Über Uns
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a href="/menu.html" class="nav__link" role="menuitem">
+              Speisekarte
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a href="/gallery.html" class="nav__link" role="menuitem">
+              Galerie
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a href="/reservations.html" class="nav__link" role="menuitem">
+              Reservierung
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a href="/contact.html" class="nav__link" role="menuitem">
+              Kontakt
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Language Selector -->
+      <div class="lang-selector" role="navigation" aria-label="Sprachauswahl">
+        <button class="lang-selector__button" aria-haspopup="listbox" aria-expanded="false" aria-label="Sprache: Deutsch">
+          <span aria-hidden="true">DE</span>
+        </button>
+        <ul class="lang-selector__list" role="listbox" aria-hidden="true">
+          <li role="option" aria-selected="true">
+            <a href="/?lang=de" hreflang="de">Deutsch</a>
+          </li>
+          <li role="option">
+            <a href="/?lang=en" hreflang="en">English</a>
+          </li>
+          <li role="option">
+            <a href="/?lang=fr" hreflang="fr">Français</a>
+          </li>
+          <li role="option">
+            <a href="/?lang=it" hreflang="it">Italiano</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================
+       MAIN CONTENT
+       ======================================== -->
+  <main id="main-content" role="main">
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h2>Willkommen bei Cinar Grill</h2>
-                <p>Erleben Sie authentische Grillspezialitäten und mediterrane Köstlichkeiten</p>
-                <a href="#menu" class="btn btn-primary">Unsere Speisekarte</a>
-            </div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">
+          Willkommen bei Cinar Grill
+        </h1>
+        <p class="hero__subtitle">
+          Erleben Sie authentische Grillspezialitäten und mediterrane Köstlichkeiten in erstklassiger Atmosphäre
+        </p>
+        <div class="hero__actions">
+          <a href="/menu.html" class="btn btn--primary btn--lg">
+            Zur Speisekarte
+          </a>
+          <a href="/reservations.html" class="btn btn--outline btn--lg">
+            Tisch Reservieren
+          </a>
         </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <button
+        class="hero__scroll-indicator"
+        aria-label="Nach unten scrollen"
+        onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})"
+      >
+        <span class="visually-hidden">Nach unten scrollen</span>
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Über Uns</h2>
-                <div class="divider"></div>
+    <!-- Features Section -->
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="features-title" class="section-header__title">
+            Warum Cinar Grill?
+          </h2>
+          <div class="section-header__divider" aria-hidden="true"></div>
+          <p class="section-header__subtitle">
+            Drei Säulen unseres Erfolgs
+          </p>
+        </header>
+
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Unsere Geschichte</h3>
-                    <p>Bei Cinar Grill verbinden wir traditionelle Rezepte mit modernem Flair. Unsere Leidenschaft für authentische Grillgerichte und mediterrane Küche spiegelt sich in jedem Gericht wider, das wir servieren.</p>
-                    <p>Wir verwenden nur die frischesten Zutaten und traditionelle Zubereitungsmethoden, um Ihnen ein unvergessliches kulinarisches Erlebnis zu bieten.</p>
-                </div>
-                <div class="about-image">
-                    <div class="placeholder-img">Restaurant Interieur</div>
-                </div>
+            <h3 class="feature-card__title">Qualität</h3>
+            <p class="feature-card__description">
+              Nur die frischesten Zutaten und beste Qualität für Ihre Gaumenfreude
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
             </div>
+            <h3 class="feature-card__title">Tradition</h3>
+            <p class="feature-card__description">
+              Authentische Rezepte weitergegeben über Generationen
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Service</h3>
+            <p class="feature-card__description">
+              Exzellenter Service für ein unvergessliches kulinarisches Erlebnis
+            </p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <div class="container">
-            <div class="section-header">
-                <h2>Unsere Speisekarte</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="menu-categories">
-                <div class="menu-category">
-                    <h3>Vorspeisen</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Mezze Platte</h4>
-                                <span class="price">8,90 €</span>
-                            </div>
-                            <p>Auswahl an traditionellen Vorspeisen</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Sigara Börek</h4>
-                                <span class="price">6,50 €</span>
-                            </div>
-                            <p>Knusprige Teigrollen mit Feta-Käse</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Hummus</h4>
-                                <span class="price">5,90 €</span>
-                            </div>
-                            <p>Hausgemachter Kichererbsen-Dip</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-category">
-                    <h3>Grillspezialitäten</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Adana Kebab</h4>
-                                <span class="price">14,90 €</span>
-                            </div>
-                            <p>Würziges Hackfleisch vom Grill</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Şiş Tavuk</h4>
-                                <span class="price">13,90 €</span>
-                            </div>
-                            <p>Marinierte Hähnchenspieße</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Karışık Izgara</h4>
-                                <span class="price">18,90 €</span>
-                            </div>
-                            <p>Gemischte Grillplatte</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Lamm Spieße</h4>
-                                <span class="price">16,90 €</span>
-                            </div>
-                            <p>Zarte Lammspieße vom Holzkohlegrill</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-category">
-                    <h3>Beilagen</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Reis</h4>
-                                <span class="price">3,50 €</span>
-                            </div>
-                            <p>Butterreis</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Pommes Frites</h4>
-                                <span class="price">3,50 €</span>
-                            </div>
-                            <p>Knusprige Pommes</p>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Salat</h4>
-                                <span class="price">4,50 €</span>
-                            </div>
-                            <p>Gemischter Salat der Saison</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- CTA Section -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__content">
+          <h2 id="cta-title" class="cta__title">
+            Bereit für ein unvergessliches Erlebnis?
+          </h2>
+          <p class="cta__description">
+            Reservieren Sie jetzt Ihren Tisch und genießen Sie authentische Grillspezialitäten
+          </p>
+          <a href="/reservations.html" class="btn btn--gold btn--xl">
+            Jetzt Reservieren
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2>Galerie</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 1</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 2</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 3</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 4</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 5</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 6</div>
-                </div>
-            </div>
-        </div>
-    </section>
+  </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Kontakt</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <h3>Adresse</h3>
-                        <p>Musterstraße 123<br>12345 Musterstadt</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Telefon</h3>
-                        <p>+49 (0) 123 456789</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Öffnungszeiten</h3>
-                        <p>Montag - Sonntag<br>11:00 - 22:00 Uhr</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Email</h3>
-                        <p>info@cinar-grill.de</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Nachricht senden</h3>
-                    <form id="contactForm">
-                        <input type="text" name="name" placeholder="Ihr Name" required>
-                        <input type="email" name="email" placeholder="Ihre Email" required>
-                        <input type="text" name="subject" placeholder="Betreff" required>
-                        <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-                        <button type="submit" class="btn btn-primary">Senden</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Cinar Grill</h3>
-                    <p>Authentische Grillspezialitäten seit vielen Jahren</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Über Uns</a></li>
-                        <li><a href="#menu">Speisekarte</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Folgen Sie uns</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Twitter</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Cinar Grill. Alle Rechte vorbehalten.</p>
-            </div>
+        <!-- Footer Brand -->
+        <div class="footer__section">
+          <h2 class="footer__brand">Cinar Grill</h2>
+          <p class="footer__tagline">
+            Authentische Grillspezialitäten seit vielen Jahren
+          </p>
         </div>
-    </footer>
 
-    <script src="js/script.js"></script>
+        <!-- Quick Links -->
+        <div class="footer__section">
+          <h3 class="footer__heading">Schnellzugriff</h3>
+          <nav aria-label="Footer Navigation">
+            <ul class="footer__links">
+              <li><a href="/">Startseite</a></li>
+              <li><a href="/about.html">Über Uns</a></li>
+              <li><a href="/menu.html">Speisekarte</a></li>
+              <li><a href="/contact.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="footer__section">
+          <h3 class="footer__heading">Rechtliches</h3>
+          <nav aria-label="Legal Navigation">
+            <ul class="footer__links">
+              <li><a href="/privacy.html">Datenschutz</a></li>
+              <li><a href="/imprint.html">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer__section">
+          <h3 class="footer__heading">Folgen Sie uns</h3>
+          <div class="footer__social">
+            <a href="https://facebook.com/cinargrill" aria-label="Facebook" rel="noopener" target="_blank">
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com/cinargrill" aria-label="Instagram" rel="noopener" target="_blank">
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="current-year">2024</span> Cinar Grill. Alle Rechte vorbehalten.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================
+       CONSENT BANNER - Cookie Compliance
+       ======================================== -->
+  <aside
+    id="consent-banner"
+    class="consent-banner"
+    role="dialog"
+    aria-labelledby="consent-title"
+    aria-describedby="consent-description"
+    aria-hidden="true"
+  >
+    <div class="consent-banner__content">
+      <h2 id="consent-title" class="consent-banner__title">Cookie-Einstellungen</h2>
+      <p id="consent-description" class="consent-banner__description">
+        Wir verwenden nur essentielle Cookies für die Grundfunktionen dieser Website. Sie können Ihre Einstellungen jederzeit ändern.
+      </p>
+      <div class="consent-banner__actions">
+        <button class="btn btn--primary" id="consent-accept">
+          Akzeptieren
+        </button>
+        <button class="btn btn--outline" id="consent-settings">
+          Einstellungen
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================
+       SCRIPTS - Deferred for Performance
+       ======================================== -->
+  <script src="/js/core.js" defer></script>
+  <script src="/js/consent.js" defer></script>
+
+  <!-- Inline Script - Minimal -->
+  <script>
+    // Update copyright year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-navigation');
+
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !isExpanded);
+        nav.setAttribute('aria-hidden', isExpanded);
+        navToggle.setAttribute('aria-label', isExpanded ? 'Hauptmenü öffnen' : 'Hauptmenü schließen');
+      });
+    }
+  </script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {
+          // Service worker registration failed - gracefully degrade
+        });
+      });
+    }
+  </script>
+
 </body>
 </html>

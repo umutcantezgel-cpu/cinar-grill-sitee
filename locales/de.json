@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "lang": "de",
+    "locale": "de-DE",
+    "name": "Deutsch",
+    "direction": "ltr"
+  },
+  "site": {
+    "name": "Cinar Grill",
+    "tagline": "Authentische Grillspezialitäten & Mediterrane Küche"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "menu": "Speisekarte",
+    "gallery": "Galerie",
+    "reservations": "Reservierung",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  },
+  "home": {
+    "hero_title": "Willkommen bei Cinar Grill",
+    "hero_subtitle": "Erleben Sie authentische Grillspezialitäten und mediterrane Köstlichkeiten in erstklassiger Atmosphäre",
+    "cta_menu": "Zur Speisekarte",
+    "cta_reserve": "Tisch Reservieren"
+  },
+  "about": {
+    "title": "Über Uns",
+    "subtitle": "Unsere Geschichte & Philosophie",
+    "story_title": "Unsere Geschichte",
+    "story_text": "Seit über zwei Jahrzehnten verbinden wir bei Cinar Grill traditionelle Rezepte mit modernem Flair. Unsere Leidenschaft für authentische Grillgerichte und mediterrane Küche spiegelt sich in jedem Gericht wider, das wir servieren.",
+    "values_title": "Unsere Werte",
+    "quality": "Qualität",
+    "quality_text": "Nur die frischesten Zutaten und beste Qualität",
+    "tradition": "Tradition",
+    "tradition_text": "Authentische Rezepte weitergegeben über Generationen",
+    "service": "Service",
+    "service_text": "Exzellenter Service für ein unvergessliches Erlebnis"
+  },
+  "menu": {
+    "title": "Unsere Speisekarte",
+    "subtitle": "Handverlesene Spezialitäten vom Holzkohlegrill",
+    "appetizers": "Vorspeisen",
+    "mains": "Hauptgerichte",
+    "sides": "Beilagen",
+    "desserts": "Desserts",
+    "beverages": "Getränke",
+    "allergen_info": "Allergen-Informationen"
+  },
+  "reservations": {
+    "title": "Tisch Reservieren",
+    "subtitle": "Sichern Sie sich Ihren Tisch bei uns",
+    "form_name": "Ihr Name",
+    "form_email": "E-Mail-Adresse",
+    "form_phone": "Telefonnummer",
+    "form_date": "Datum",
+    "form_time": "Uhrzeit",
+    "form_guests": "Anzahl Gäste",
+    "form_message": "Besondere Wünsche",
+    "submit": "Reservierung Anfragen",
+    "success": "Vielen Dank! Wir werden Ihre Reservierung bestätigen.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns auf Ihre Nachricht",
+    "address_title": "Adresse",
+    "address": "Musterstraße 123, 12345 Musterstadt",
+    "phone_title": "Telefon",
+    "phone": "+49 (0) 123 456789",
+    "email_title": "E-Mail",
+    "email": "info@cinar-grill.de",
+    "hours_title": "Öffnungszeiten",
+    "hours_mon_fri": "Montag - Freitag: 11:00 - 22:00 Uhr",
+    "hours_sat_sun": "Samstag - Sonntag: 12:00 - 23:00 Uhr",
+    "form_subject": "Betreff",
+    "form_message": "Ihre Nachricht",
+    "send": "Nachricht Senden"
+  },
+  "footer": {
+    "tagline": "Authentische Grillspezialitäten seit vielen Jahren",
+    "quick_links": "Schnellzugriff",
+    "follow_us": "Folgen Sie uns",
+    "newsletter": "Newsletter",
+    "newsletter_text": "Bleiben Sie informiert über Neuigkeiten und Angebote",
+    "subscribe": "Abonnieren",
+    "copyright": "© {year} Cinar Grill. Alle Rechte vorbehalten."
+  },
+  "errors": {
+    "404_title": "Seite nicht gefunden",
+    "404_text": "Die gesuchte Seite existiert nicht.",
+    "503_title": "Wartungsarbeiten",
+    "503_text": "Wir führen gerade Wartungsarbeiten durch. Bitte versuchen Sie es später erneut.",
+    "offline_title": "Keine Internetverbindung",
+    "offline_text": "Sie sind offline. Bitte überprüfen Sie Ihre Internetverbindung.",
+    "back_home": "Zurück zur Startseite"
+  },
+  "accessibility": {
+    "skip_to_content": "Zum Hauptinhalt springen",
+    "skip_to_nav": "Zur Navigation springen",
+    "open_menu": "Menü öffnen",
+    "close_menu": "Menü schließen",
+    "loading": "Lädt...",
+    "close": "Schließen",
+    "previous": "Vorheriges",
+    "next": "Nächstes"
+  },
+  "consent": {
+    "title": "Cookie-Einstellungen",
+    "text": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können Ihre Einstellungen jederzeit ändern.",
+    "essential": "Essenziell",
+    "essential_desc": "Notwendig für die Grundfunktionen der Website",
+    "analytics": "Analytisch",
+    "analytics_desc": "Hilft uns, die Website zu verbessern",
+    "marketing": "Marketing",
+    "marketing_desc": "Für personalisierte Werbung",
+    "accept_all": "Alle Akzeptieren",
+    "accept_selected": "Auswahl Akzeptieren",
+    "reject_all": "Alle Ablehnen",
+    "manage": "Einstellungen Verwalten"
+  }
+}

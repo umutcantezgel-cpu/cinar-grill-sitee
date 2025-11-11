@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "lang": "fr",
+    "locale": "fr-FR",
+    "name": "Français",
+    "direction": "ltr"
+  },
+  "site": {
+    "name": "Cinar Grill",
+    "tagline": "Spécialités Grillées Authentiques & Cuisine Méditerranéenne"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "menu": "Menu",
+    "gallery": "Galerie",
+    "reservations": "Réservation",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "imprint": "Mentions Légales"
+  },
+  "home": {
+    "hero_title": "Bienvenue chez Cinar Grill",
+    "hero_subtitle": "Découvrez des spécialités grillées authentiques et des délices méditerranéens dans une atmosphère de première classe",
+    "cta_menu": "Voir le Menu",
+    "cta_reserve": "Réserver une Table"
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "Notre Histoire & Philosophie",
+    "story_title": "Notre Histoire",
+    "story_text": "Depuis plus de deux décennies, chez Cinar Grill, nous combinons recettes traditionnelles et touche moderne. Notre passion pour les plats grillés authentiques et la cuisine méditerranéenne se reflète dans chaque plat que nous servons.",
+    "values_title": "Nos Valeurs",
+    "quality": "Qualité",
+    "quality_text": "Uniquement les ingrédients les plus frais et la meilleure qualité",
+    "tradition": "Tradition",
+    "tradition_text": "Recettes authentiques transmises de génération en génération",
+    "service": "Service",
+    "service_text": "Un service excellent pour une expérience inoubliable"
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "subtitle": "Spécialités Sélectionnées du Grill au Charbon",
+    "appetizers": "Entrées",
+    "mains": "Plats Principaux",
+    "sides": "Accompagnements",
+    "desserts": "Desserts",
+    "beverages": "Boissons",
+    "allergen_info": "Informations sur les Allergènes"
+  },
+  "reservations": {
+    "title": "Réserver une Table",
+    "subtitle": "Réservez votre table chez nous",
+    "form_name": "Votre Nom",
+    "form_email": "Adresse E-mail",
+    "form_phone": "Numéro de Téléphone",
+    "form_date": "Date",
+    "form_time": "Heure",
+    "form_guests": "Nombre de Convives",
+    "form_message": "Demandes Spéciales",
+    "submit": "Demander une Réservation",
+    "success": "Merci! Nous confirmerons votre réservation.",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes impatients de vous entendre",
+    "address_title": "Adresse",
+    "address": "Rue Exemple 123, 12345 Ville Exemple",
+    "phone_title": "Téléphone",
+    "phone": "+49 (0) 123 456789",
+    "email_title": "E-mail",
+    "email": "info@cinar-grill.de",
+    "hours_title": "Heures d'Ouverture",
+    "hours_mon_fri": "Lundi - Vendredi: 11:00 - 22:00",
+    "hours_sat_sun": "Samedi - Dimanche: 12:00 - 23:00",
+    "form_subject": "Objet",
+    "form_message": "Votre Message",
+    "send": "Envoyer le Message"
+  },
+  "footer": {
+    "tagline": "Spécialités grillées authentiques depuis de nombreuses années",
+    "quick_links": "Liens Rapides",
+    "follow_us": "Suivez-nous",
+    "newsletter": "Newsletter",
+    "newsletter_text": "Restez informé des actualités et offres",
+    "subscribe": "S'abonner",
+    "copyright": "© {year} Cinar Grill. Tous droits réservés."
+  },
+  "errors": {
+    "404_title": "Page Non Trouvée",
+    "404_text": "La page que vous recherchez n'existe pas.",
+    "503_title": "Maintenance",
+    "503_text": "Nous effectuons actuellement une maintenance. Veuillez réessayer plus tard.",
+    "offline_title": "Pas de Connexion Internet",
+    "offline_text": "Vous êtes hors ligne. Veuillez vérifier votre connexion Internet.",
+    "back_home": "Retour à l'Accueil"
+  },
+  "accessibility": {
+    "skip_to_content": "Aller au contenu principal",
+    "skip_to_nav": "Aller à la navigation",
+    "open_menu": "Ouvrir le menu",
+    "close_menu": "Fermer le menu",
+    "loading": "Chargement...",
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "consent": {
+    "title": "Paramètres des Cookies",
+    "text": "Nous utilisons des cookies pour améliorer votre expérience. Vous pouvez modifier vos paramètres à tout moment.",
+    "essential": "Essentiels",
+    "essential_desc": "Nécessaires pour les fonctions de base du site",
+    "analytics": "Analytiques",
+    "analytics_desc": "Nous aide à améliorer le site",
+    "marketing": "Marketing",
+    "marketing_desc": "Pour la publicité personnalisée",
+    "accept_all": "Tout Accepter",
+    "accept_selected": "Accepter la Sélection",
+    "reject_all": "Tout Refuser",
+    "manage": "Gérer les Paramètres"
+  }
+}
