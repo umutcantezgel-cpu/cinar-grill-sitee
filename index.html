@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cinar Grill - Authentische türkische und mediterrane Küche. Genießen Sie unsere köstlichen Grillspezialitäten.">
-    <meta name="keywords" content="Restaurant, Grill, Türkisch, Mediterran, Essen, Cinar">
-    <title>Cinar Grill - Authentische Grillspezialitäten</title>
+    <meta name="description" content="Cinar Grill - Luxuriöse türkische und mediterrane Küche. Erleben Sie authentische Grillspezialitäten in elegantem Ambiente mit erstklassigem Service.">
+    <meta name="keywords" content="Restaurant, Grill, Türkisch, Mediterran, Essen, Cinar, Premium, Luxus, Reservierung, Online-Bestellung">
+    <meta name="author" content="Cinar Grill">
+    <meta property="og:title" content="Cinar Grill - Premium Grillspezialitäten">
+    <meta property="og:description" content="Erleben Sie authentische türkische und mediterrane Küche in luxuriösem Ambiente">
+    <meta property="og:type" content="restaurant">
+    <title>Cinar Grill - Premium Grillspezialitäten & Mediterrane Küche</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <div class="logo">
-                <h1>Cinar Grill</h1>
+                <h1><i class="fas fa-fire-flame-curved"></i> Cinar Grill</h1>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">Über Uns</a></li>
                 <li><a href="#menu" class="nav-link">Speisekarte</a></li>
+                <li><a href="#chef" class="nav-link">Chef & Team</a></li>
                 <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#testimonials" class="nav-link">Bewertungen</a></li>
                 <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                <li><a href="#reservation" class="btn btn-reserve-nav">Reservieren</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -35,11 +47,48 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-video-container">
+            <!-- Placeholder for video background - can be replaced with actual video -->
+            <div class="hero-video-placeholder"></div>
+        </div>
         <div class="hero-overlay">
             <div class="hero-content">
-                <h2>Willkommen bei Cinar Grill</h2>
-                <p>Erleben Sie authentische Grillspezialitäten und mediterrane Köstlichkeiten</p>
-                <a href="#menu" class="btn btn-primary">Unsere Speisekarte</a>
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Premium Restaurant</span>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h2 class="hero-title">Willkommen bei Cinar Grill</h2>
+                <p class="hero-subtitle">Erleben Sie authentische Grillspezialitäten und mediterrane Köstlichkeiten in einem Ambiente voller Eleganz und Tradition</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fas fa-utensils"></i> Unsere Speisekarte
+                    </a>
+                    <a href="#reservation" class="btn btn-secondary">
+                        <i class="fas fa-calendar-check"></i> Jetzt Reservieren
+                    </a>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>Scrollen Sie nach unten</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="hero-feature">
+                <i class="fas fa-award"></i>
+                <h4>Preisgekrönt</h4>
+                <p>Ausgezeichnete Küche</p>
+            </div>
+            <div class="hero-feature">
+                <i class="fas fa-leaf"></i>
+                <h4>Frische Zutaten</h4>
+                <p>Täglich frisch</p>
+            </div>
+            <div class="hero-feature">
+                <i class="fas fa-clock"></i>
+                <h4>Täglich geöffnet</h4>
+                <p>11:00 - 22:00 Uhr</p>
             </div>
         </div>
     </section>
@@ -48,17 +97,53 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
+                <span class="section-subtitle">Entdecken Sie unsere Geschichte</span>
                 <h2>Über Uns</h2>
                 <div class="divider"></div>
+                <p class="section-description">Tradition trifft auf moderne Kochkunst</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <h3>Unsere Geschichte</h3>
                     <p>Bei Cinar Grill verbinden wir traditionelle Rezepte mit modernem Flair. Unsere Leidenschaft für authentische Grillgerichte und mediterrane Küche spiegelt sich in jedem Gericht wider, das wir servieren.</p>
                     <p>Wir verwenden nur die frischesten Zutaten und traditionelle Zubereitungsmethoden, um Ihnen ein unvergessliches kulinarisches Erlebnis zu bieten.</p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <i class="fas fa-fire"></i>
+                            <h4>Authentischer Holzkohlegrill</h4>
+                            <p>Traditionelle Grillmethoden für den perfekten Geschmack</p>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Mit Liebe zubereitet</h4>
+                            <p>Jedes Gericht wird mit Sorgfalt und Leidenschaft kreiert</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-image">
                     <div class="placeholder-img">Restaurant Interieur</div>
+                    <div class="about-image-badge">
+                        <i class="fas fa-utensils"></i>
+                        <span>Premium Qualität</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Jahre Erfahrung</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Gerichte auf der Karte</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Zufriedene Gäste monatlich</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Positive Bewertungen</div>
                 </div>
             </div>
         </div>
@@ -68,94 +153,346 @@
     <section id="menu" class="menu">
         <div class="container">
             <div class="section-header">
-                <h2>Unsere Speisekarte</h2>
+                <span class="section-subtitle">Unsere kulinarischen Kreationen</span>
+                <h2>Speisekarte</h2>
                 <div class="divider"></div>
+                <p class="section-description">Entdecken Sie die Vielfalt unserer authentischen Gerichte</p>
+            </div>
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">Alle Gerichte</button>
+                <button class="filter-btn" data-filter="vorspeisen">Vorspeisen</button>
+                <button class="filter-btn" data-filter="hauptgerichte">Hauptgerichte</button>
+                <button class="filter-btn" data-filter="beilagen">Beilagen</button>
             </div>
             <div class="menu-categories">
-                <div class="menu-category">
-                    <h3>Vorspeisen</h3>
+                <div class="menu-category" data-category="vorspeisen">
+                    <h3><i class="fas fa-seedling"></i> Vorspeisen</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Mezze Platte</h4>
-                                <span class="price">8,90 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Mezze</div>
+                                <div class="menu-badge"><i class="fas fa-fire"></i> Beliebt</div>
                             </div>
-                            <p>Auswahl an traditionellen Vorspeisen</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Mezze Platte</h4>
+                                    <span class="price">8,90 €</span>
+                                </div>
+                                <p>Auswahl an traditionellen Vorspeisen: Hummus, Baba Ganoush, Taboulé</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-leaf"></i> Vegetarisch</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Sigara Börek</h4>
-                                <span class="price">6,50 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Sigara Börek</div>
                             </div>
-                            <p>Knusprige Teigrollen mit Feta-Käse</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Sigara Börek</h4>
+                                    <span class="price">6,50 €</span>
+                                </div>
+                                <p>Knusprige Teigrollen gefüllt mit Feta-Käse und frischen Kräutern</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-leaf"></i> Vegetarisch</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Hummus</h4>
-                                <span class="price">5,90 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Hummus</div>
                             </div>
-                            <p>Hausgemachter Kichererbsen-Dip</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Hummus</h4>
+                                    <span class="price">5,90 €</span>
+                                </div>
+                                <p>Hausgemachter Kichererbsen-Dip mit Tahini und Olivenöl</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-leaf"></i> Vegetarisch</span>
+                                    <span class="tag"><i class="fas fa-heart"></i> Vegan</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="menu-category">
-                    <h3>Grillspezialitäten</h3>
+                <div class="menu-category" data-category="hauptgerichte">
+                    <h3><i class="fas fa-fire-burner"></i> Grillspezialitäten</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Adana Kebab</h4>
-                                <span class="price">14,90 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Adana Kebab</div>
+                                <div class="menu-badge special"><i class="fas fa-star"></i> Chef's Special</div>
                             </div>
-                            <p>Würziges Hackfleisch vom Grill</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Adana Kebab</h4>
+                                    <span class="price">14,90 €</span>
+                                </div>
+                                <p>Würziges Hackfleisch vom Holzkohlegrill, serviert mit Reis und Salat</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-pepper-hot"></i> Scharf</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Şiş Tavuk</h4>
-                                <span class="price">13,90 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Şiş Tavuk</div>
                             </div>
-                            <p>Marinierte Hähnchenspieße</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Şiş Tavuk</h4>
+                                    <span class="price">13,90 €</span>
+                                </div>
+                                <p>Marinierte Hähnchenspieße mit hausgemachten Gewürzen vom Grill</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-drumstick-bite"></i> Geflügel</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Karışık Izgara</h4>
-                                <span class="price">18,90 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Karışık Izgara</div>
+                                <div class="menu-badge"><i class="fas fa-fire"></i> Beliebt</div>
                             </div>
-                            <p>Gemischte Grillplatte</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Karışık Izgara</h4>
+                                    <span class="price">18,90 €</span>
+                                </div>
+                                <p>Gemischte Grillplatte mit Adana, Lamm, Hähnchen und Köfte</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-utensils"></i> Für 1-2 Personen</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Lamm Spieße</h4>
-                                <span class="price">16,90 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Lamm Spieße</div>
                             </div>
-                            <p>Zarte Lammspieße vom Holzkohlegrill</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Lamm Spieße</h4>
+                                    <span class="price">16,90 €</span>
+                                </div>
+                                <p>Zarte Lammspieße vom Holzkohlegrill mit Grillgemüse</p>
+                                <div class="item-tags">
+                                    <span class="tag"><i class="fas fa-award"></i> Premium</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="menu-category">
-                    <h3>Beilagen</h3>
+                <div class="menu-category" data-category="beilagen">
+                    <h3><i class="fas fa-bowl-rice"></i> Beilagen</h3>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Reis</h4>
-                                <span class="price">3,50 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Butterreis</div>
                             </div>
-                            <p>Butterreis</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Butterreis</h4>
+                                    <span class="price">3,50 €</span>
+                                </div>
+                                <p>Dufteinder Reis mit Butter und feinen Gewürzen</p>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Pommes Frites</h4>
-                                <span class="price">3,50 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Pommes</div>
                             </div>
-                            <p>Knusprige Pommes</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Pommes Frites</h4>
+                                    <span class="price">3,50 €</span>
+                                </div>
+                                <p>Knusprige hausgemachte Pommes Frites</p>
+                            </div>
                         </div>
                         <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Salat</h4>
-                                <span class="price">4,50 €</span>
+                            <div class="menu-item-image">
+                                <div class="placeholder-img menu-img">Salat</div>
                             </div>
-                            <p>Gemischter Salat der Saison</p>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h4>Gemischter Salat</h4>
+                                    <span class="price">4,50 €</span>
+                                </div>
+                                <p>Frischer Salat der Saison mit hausgemachtem Dressing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reservieren Sie Ihren Tisch</span>
+                <h2>Online Reservierung</h2>
+                <div class="divider"></div>
+                <p class="section-description">Buchen Sie Ihren Platz für ein unvergessliches kulinarisches Erlebnis</p>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h3>Warum reservieren?</h3>
+                    <div class="info-features">
+                        <div class="info-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Garantierter Platz</h4>
+                                <p>Sichern Sie sich Ihren Lieblingsplatz zu Ihrer Wunschzeit</p>
+                            </div>
+                        </div>
+                        <div class="info-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Besondere Anlässe</h4>
+                                <p>Perfekt für Geburtstage, Jubiläen und Geschäftsessen</p>
+                            </div>
+                        </div>
+                        <div class="info-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Sofortige Bestätigung</h4>
+                                <p>Erhalten Sie unmittelbar eine Bestätigung per E-Mail</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opening-hours">
+                        <h4><i class="fas fa-clock"></i> Öffnungszeiten</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Montag - Freitag</span>
+                                <span class="hours">11:00 - 22:00 Uhr</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Samstag - Sonntag</span>
+                                <span class="hours">12:00 - 23:00 Uhr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-container">
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> E-Mail</label>
+                                <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Telefon</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+49 123 456789">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests"><i class="fas fa-users"></i> Personen</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Anzahl wählen</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 Personen</option>
+                                    <option value="3">3 Personen</option>
+                                    <option value="4">4 Personen</option>
+                                    <option value="5">5 Personen</option>
+                                    <option value="6">6 Personen</option>
+                                    <option value="7+">7+ Personen</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date"><i class="fas fa-calendar"></i> Datum</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time"><i class="fas fa-clock"></i> Uhrzeit</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-message"></i> Besondere Wünsche (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Besondere Anlässe, Allergien, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i> Jetzt Reservieren
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef & Team Section -->
+    <section id="chef" class="chef-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Lernen Sie uns kennen</span>
+                <h2>Chef & Team</h2>
+                <div class="divider"></div>
+                <p class="section-description">Leidenschaft und Expertise in jeder Küche</p>
+            </div>
+            <div class="chef-content">
+                <div class="chef-main">
+                    <div class="chef-image">
+                        <div class="placeholder-img chef-img">Chef Cinar</div>
+                        <div class="chef-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Küchenchef</span>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <h3>Chef Cinar Yilmaz</h3>
+                        <p class="chef-title">Küchenchef & Gründer</p>
+                        <p class="chef-description">Mit über 20 Jahren Erfahrung in der türkischen und mediterranen Küche bringt Chef Cinar authentische Geschmäcker und innovative Techniken zusammen. Seine Leidenschaft für frische Zutaten und traditionelle Zubereitungsmethoden macht jedes Gericht zu einem unvergesslichen Erlebnis.</p>
+                        <div class="chef-specialties">
+                            <h4>Spezialitäten:</h4>
+                            <div class="specialty-tags">
+                                <span><i class="fas fa-fire"></i> Holzkohlegrill</span>
+                                <span><i class="fas fa-pepper-hot"></i> Würzige Marinaden</span>
+                                <span><i class="fas fa-bread-slice"></i> Traditionelle Mezze</span>
+                            </div>
+                        </div>
+                        <div class="chef-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Kochen ist meine Leidenschaft. Jedes Gericht erzählt eine Geschichte - eine Geschichte von Tradition, Familie und Liebe zum Detail."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-members">
+                    <h3 class="team-title">Unser Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-member-image">
+                                <div class="placeholder-img team-img">Team Member</div>
+                            </div>
+                            <h4>Ayşe Demir</h4>
+                            <p class="team-role">Sous Chef</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-image">
+                                <div class="placeholder-img team-img">Team Member</div>
+                            </div>
+                            <h4>Mehmet Özkan</h4>
+                            <p class="team-role">Grillmeister</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-image">
+                                <div class="placeholder-img team-img">Team Member</div>
+                            </div>
+                            <h4>Zeynep Kaya</h4>
+                            <p class="team-role">Service Manager</p>
                         </div>
                     </div>
                 </div>
@@ -167,27 +504,182 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
+                <span class="section-subtitle">Visuelle Impressionen</span>
                 <h2>Galerie</h2>
                 <div class="divider"></div>
+                <p class="section-description">Entdecken Sie unsere kulinarischen Meisterwerke</p>
+            </div>
+            <div class="gallery-filter">
+                <button class="gallery-filter-btn active" data-filter="all">Alle</button>
+                <button class="gallery-filter-btn" data-filter="food">Gerichte</button>
+                <button class="gallery-filter-btn" data-filter="interior">Interieur</button>
+                <button class="gallery-filter-btn" data-filter="events">Events</button>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 1</div>
+                <div class="gallery-item" data-category="food">
+                    <div class="placeholder-img">Adana Kebab</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Adana Kebab</h4>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 2</div>
+                <div class="gallery-item" data-category="food">
+                    <div class="placeholder-img">Mezze Platte</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Mezze Platte</h4>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 3</div>
+                <div class="gallery-item" data-category="interior">
+                    <div class="placeholder-img">Restaurant Innen</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Restaurant Ambiente</h4>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 4</div>
+                <div class="gallery-item" data-category="food">
+                    <div class="placeholder-img">Grill Platte</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Gemischte Grillplatte</h4>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 5</div>
+                <div class="gallery-item" data-category="events">
+                    <div class="placeholder-img">Event</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Private Events</h4>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <div class="placeholder-img">Gericht 6</div>
+                <div class="gallery-item" data-category="food">
+                    <div class="placeholder-img">Dessert</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Hausgemachte Desserts</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="interior">
+                    <div class="placeholder-img">Bar Bereich</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Bar & Lounge</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <div class="placeholder-img">Lamm Spieße</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <h4>Lamm Spieße</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Was unsere Gäste sagen</span>
+                <h2>Bewertungen</h2>
+                <div class="divider"></div>
+                <p class="section-description">Zufriedene Gäste sind unsere beste Referenz</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-item active">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Absolut fantastisches Essen! Die Grillspezialitäten sind authentisch und von höchster Qualität. Der Service ist aufmerksam und freundlich. Wir kommen definitiv wieder!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <div class="placeholder-img author-img">M.S.</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Maria Schmidt</h4>
+                                <p>Stammgast seit 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Das Cinar Grill ist mein Lieblingsrestaurant! Die Atmosphäre ist gemütlich und elegant zugleich. Die Mezze-Platte ist ein Traum und die Grillgerichte sind perfekt zubereitet."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <div class="placeholder-img author-img">T.M.</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Thomas Müller</h4>
+                                <p>Google Bewertung</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Hervorragende türkische Küche! Alles wird frisch zubereitet und schmeckt ausgezeichnet. Das Personal ist sehr herzlich und das Preis-Leistungs-Verhältnis ist top!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <div class="placeholder-img author-img">S.K.</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Klein</h4>
+                                <p>TripAdvisor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="rating-summary">
+                <div class="rating-box">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Basierend auf 500+ Bewertungen</p>
+                </div>
+                <div class="rating-platforms">
+                    <div class="platform">
+                        <i class="fab fa-google"></i>
+                        <span>4.8 Google</span>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-tripadvisor"></i>
+                        <span>5.0 TripAdvisor</span>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-yelp"></i>
+                        <span>4.9 Yelp</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,38 +689,108 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
+                <span class="section-subtitle">Wir freuen uns auf Sie</span>
                 <h2>Kontakt</h2>
                 <div class="divider"></div>
+                <p class="section-description">Kontaktieren Sie uns für Reservierungen oder Fragen</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
-                        <h3>Adresse</h3>
-                        <p>Musterstraße 123<br>12345 Musterstadt</p>
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Adresse</h3>
+                            <p>Musterstraße 123<br>12345 Musterstadt<br>Deutschland</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <h3>Telefon</h3>
-                        <p>+49 (0) 123 456789</p>
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Telefon</h3>
+                            <p><a href="tel:+491234567890">+49 (0) 123 456789</a></p>
+                            <p class="info-note">Täglich 11:00 - 22:00 Uhr</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <h3>Öffnungszeiten</h3>
-                        <p>Montag - Sonntag<br>11:00 - 22:00 Uhr</p>
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Öffnungszeiten</h3>
+                            <p>Montag - Freitag: 11:00 - 22:00 Uhr<br>Samstag - Sonntag: 12:00 - 23:00 Uhr</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <h3>Email</h3>
-                        <p>info@cinar-grill.de</p>
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>E-Mail</h3>
+                            <p><a href="mailto:info@cinar-grill.de">info@cinar-grill.de</a></p>
+                            <p class="info-note">Wir antworten innerhalb von 24 Stunden</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>Folgen Sie uns</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form-wrapper">
                     <h3>Nachricht senden</h3>
-                    <form id="contactForm">
-                        <input type="text" name="name" placeholder="Ihr Name" required>
-                        <input type="email" name="email" placeholder="Ihre Email" required>
-                        <input type="text" name="subject" placeholder="Betreff" required>
-                        <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-                        <button type="submit" class="btn btn-primary">Senden</button>
+                    <p>Haben Sie Fragen oder besondere Wünsche? Schreiben Sie uns!</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Ihr Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Ihre E-Mail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Betreff" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Nachricht senden
+                        </button>
                     </form>
                 </div>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Google Maps Integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3><i class="fas fa-envelope-open-text"></i> Newsletter abonnieren</h3>
+                    <p>Bleiben Sie informiert über neue Gerichte, besondere Angebote und exklusive Events</p>
+                </div>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" name="newsletter-email" placeholder="Ihre E-Mail-Adresse" required>
+                    <button type="submit" class="btn btn-secondary">
+                        <i class="fas fa-bell"></i> Abonnieren
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -237,32 +799,89 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Cinar Grill</h3>
-                    <p>Authentische Grillspezialitäten seit vielen Jahren</p>
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-fire-flame-curved"></i> Cinar Grill</h3>
+                    </div>
+                    <p>Authentische türkische und mediterrane Grillspezialitäten seit über 15 Jahren. Wir verbinden Tradition mit Innovation für ein unvergessliches kulinarisches Erlebnis.</p>
+                    <div class="footer-awards">
+                        <div class="award-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Best Restaurant 2024</span>
+                        </div>
+                        <div class="award-badge">
+                            <i class="fas fa-star"></i>
+                            <span>4.9★ Rating</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Über Uns</a></li>
-                        <li><a href="#menu">Speisekarte</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Über Uns</a></li>
+                        <li><a href="#menu"><i class="fas fa-chevron-right"></i> Speisekarte</a></li>
+                        <li><a href="#chef"><i class="fas fa-chevron-right"></i> Chef & Team</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Galerie</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Kontakt</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
+                    <h4>Öffnungszeiten</h4>
+                    <ul class="opening-times">
+                        <li>
+                            <span>Montag - Freitag</span>
+                            <span>11:00 - 22:00</span>
+                        </li>
+                        <li>
+                            <span>Samstag - Sonntag</span>
+                            <span>12:00 - 23:00</span>
+                        </li>
+                    </ul>
+                    <div class="footer-contact-quick">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+491234567890">+49 (0) 123 456789</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@cinar-grill.de">info@cinar-grill.de</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
                     <h4>Folgen Sie uns</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Twitter</a>
+                    <p>Bleiben Sie mit uns in Verbindung für die neuesten Updates und Angebote</p>
+                    <div class="footer-social-links">
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="TripAdvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Cinar Grill. Alle Rechte vorbehalten.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Cinar Grill. Alle Rechte vorbehalten.</p>
+                    <div class="footer-links">
+                        <a href="#">Datenschutz</a>
+                        <span>|</span>
+                        <a href="#">Impressum</a>
+                        <span>|</span>
+                        <a href="#">AGB</a>
+                    </div>
+                    <p class="footer-credit">Design & Development by <span>Premium Web Solutions</span></p>
+                </div>
             </div>
         </div>
+        <button id="scrollToTop" class="scroll-to-top" aria-label="Nach oben scrollen">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
 
     <script src="js/script.js"></script>
